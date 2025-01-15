@@ -65,7 +65,7 @@ function ResponsiveAppBar() {
               fontFamily: 'Japan Rich, sans-serif',
             }}
           >
-            Easy-Japanese
+            Japanese-Easy
           </Typography>
 
           {/* Menu button for small screens */}
@@ -163,7 +163,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            Easy-Japanese
+            Japanese-Easy
           </Typography>
          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
