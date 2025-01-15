@@ -11,10 +11,10 @@ const LandingPage = () => {
       <Container>
         {/* Header Section */}
         <Box sx={{ textAlign: 'center', marginTop: 4 }}>
-              <Typography variant="h3" fontWeight={600} marginBottom={2}>
+              <Typography variant="h4" fontWeight={600} marginBottom={2}>
             Learn Japanese Characters
           </Typography>
-          <Typography variant="h6" color="textSecondary" marginBottom={4}>
+          <Typography variant="h6" color="textSecondary" fontWeight={600} marginBottom={4}>
             Explore Hiragana, Katakana, Kanji, and Kana. Understand, learn, and practice these essential writing systems.
           </Typography>
         </Box>
@@ -23,7 +23,7 @@ const LandingPage = () => {
         <Grid container spacing={4} justifyContent="center">
           {/* Hiragana Section */}
           <Grid item xs={12} sm={6} md={3}>
-            <Paper sx={{ padding: 3, textAlign: 'center' }}>
+            <Paper sx={{ padding: 3, textAlign: 'center', backgroundColor: 'rgb(0,0,0,0)', boxShadow: '0 5px 5px rgba(0, 0, 0)' }}>
               <img src={hiraganaImage} alt="Hiragana" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
               <Typography variant="h5" gutterBottom sx={{ marginTop: 2 }}>
                 Hiragana
@@ -31,7 +31,7 @@ const LandingPage = () => {
               <Typography variant="body1" color="textSecondary">
                 Hiragana is the most basic Japanese script, used for native Japanese words and grammatical elements.
               </Typography>
-              <Button variant="outlined" color="primary" fullWidth href="#/hiragana">
+              <Button variant="contained" color="inherit" fullWidth href="#/hiragana" sx={{ marginTop: 2 }}>
                 Learn
               </Button>
             </Paper>
@@ -39,7 +39,7 @@ const LandingPage = () => {
 
           {/* Katakana Section */}
           <Grid item xs={12} sm={6} md={3}>
-            <Paper sx={{ padding: 3, textAlign: 'center' }}>
+            <Paper sx={{ padding: 3, textAlign: 'center', backgroundColor: 'rgb(0,0,0,0)', boxShadow: '0 5px 5px rgba(0, 0, 0)' }}>
               <img src={katakanaImage} alt="Katakana" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
               <Typography variant="h5" gutterBottom sx={{ marginTop: 2 }}>
                 Katakana
@@ -47,7 +47,7 @@ const LandingPage = () => {
               <Typography variant="body1" color="textSecondary">
                 Katakana is used primarily for foreign words, names, technical terms, and onomatopoeia.
               </Typography>
-              <Button variant="outlined" color="primary" fullWidth src="#/katakana">
+              <Button variant="contained" color="inherit"  fullWidth src="#/katakana" sx={{ marginTop: 2 }} >
                 Learn 
               </Button>
             </Paper>
@@ -55,7 +55,7 @@ const LandingPage = () => {
 
           {/* Kanji Section */}
           <Grid item xs={12} sm={6} md={3}>
-            <Paper sx={{ padding: 3, textAlign: 'center' }}>
+            <Paper sx={{ padding: 3, textAlign: 'center', backgroundColor: 'rgb(0,0,0,0)', boxShadow: '0 5px 5px rgba(0, 0, 0)' }}>
               <img src={kanjiImage} alt="Kanji" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
               <Typography variant="h5" gutterBottom sx={{ marginTop: 2 }}>
                 Kanji
@@ -63,7 +63,7 @@ const LandingPage = () => {
               <Typography variant="body1" color="textSecondary">
                 Kanji are logographic characters borrowed from Chinese. They represent concepts and words.
               </Typography>
-              <Button variant="outlined" color="primary" fullWidth href="#/kanji">
+              <Button variant="contained" color="inherit" fullWidth href="#/kanji" sx={{ marginTop: 2 }}>
                 Learn 
               </Button>
             </Paper>
@@ -71,7 +71,7 @@ const LandingPage = () => {
 
           {/* Kana Conversion Section */}
           <Grid item xs={12} sm={6} md={3}>
-            <Paper sx={{ padding: 3, textAlign: 'center' }}>
+            <Paper sx={{ padding: 3, textAlign: 'center', backgroundColor: 'rgb(0,0,0,0)', boxShadow: '0 5px 5px rgba(0, 0, 0)' }}>
               <img src={kanaImage} alt="Kana" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
               <Typography variant="h5" gutterBottom sx={{ marginTop: 2 }}>
                 Kana Conversion
@@ -79,7 +79,7 @@ const LandingPage = () => {
               <Typography variant="body1" color="textSecondary">
                 Learn how to convert between Kana and Romanized Japanese characters easily.
               </Typography>
-              <Button variant="outlined" color="primary" fullWidth >
+              <Button variant="contained" color="inherit" fullWidth sx={{ marginTop: 2 }} >
                 Try Conversion
               </Button>
             </Paper>
