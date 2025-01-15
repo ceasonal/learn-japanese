@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Logo from '../images/logo.png';
+import { Link } from 'react-router-dom'; 
 
 const pages = ['Search', 'Convert'];
 const Characters = ['Hiragana', 'Katakana', 'Kanji', 'Kana'];
@@ -52,7 +53,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -97,13 +98,17 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center', color:'black' }}>{page}</Typography>
+                  <Typography sx={{ textAlign: 'center', color: 'black' }}>
+                    <Link to={`/${page.toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                      {page}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
 
               {/* Characters menu for small screens */}
               <MenuItem onClick={handleOpenCharactersMenu}>
-                <Typography sx={{ textAlign: 'center', color:'black' }}>Characters</Typography>
+                <Typography sx={{ textAlign: 'center', color: 'black' }}>Characters</Typography>
               </MenuItem>
               <Menu
                 anchorEl={anchorElCharacters}
@@ -121,7 +126,11 @@ function ResponsiveAppBar() {
               >
                 {Characters.map((character) => (
                   <MenuItem key={character} onClick={handleCloseCharactersMenu}>
-                    <Typography sx={{ textAlign: 'center' }}>{character}</Typography>
+                    <Typography sx={{ textAlign: 'center' }}>
+                      <Link to={`/${character.toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                        {character}
+                      </Link>
+                    </Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -142,12 +151,12 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'Japan Rich, sans-serif',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'black',
@@ -156,10 +165,8 @@ function ResponsiveAppBar() {
           >
             Easy-Japanese
           </Typography>
-
-          {/* Navigation buttons for medium and larger screens - align to the right */}
+         
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
-            {/* Characters dropdown */}
             <Button
               sx={{ my: 2, color: 'black', display: 'block', fontSize: '1.5rem', fontWeight: 700 }}
               onClick={handleOpenCharactersMenu}
@@ -182,23 +189,27 @@ function ResponsiveAppBar() {
             >
               {Characters.map((character) => (
                 <MenuItem key={character} onClick={handleCloseCharactersMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{character}</Typography>
+                  <Typography sx={{ textAlign: 'center' }}>
+                    <Link to={`/${character.toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                      {character}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
 
-            {/* Other navigation buttons */}
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'black', display: 'block', fontSize: '1.5rem', fontWeight: 700 }}
               >
-                {page}
+                <Link to={`/${page.toLowerCase()}`} style={{ textDecoration: 'none', color: 'black' }}>
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>
-
         </Toolbar>
       </Container>
     </AppBar>

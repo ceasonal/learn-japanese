@@ -1,11 +1,25 @@
-
+import React from 'react';
+import Home from './pages/Home';
+import Kanji from './pages/Kanji';
+import Hiragana from './pages/Hiragana';
+import Katakana from './pages/Katakana';
+import { HashRouter as Router, Routes, Route} from  'react-router-dom';
+import Navbar from './assets/components/Navbar';
 import './App.css';
-import Navbar from './assets/components/Navbar'
 function App() {
  
   return (
     <>
+    <Router>
     <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/kanji" element={<Kanji/>}/>
+        <Route path="/hiragana" element={<Hiragana/>}/>
+        <Route path="/katakana" element={<Katakana/>}/>
+        <Route path="*" element={<Home/>}/>
+      </Routes>
+    </Router>
     </>
   );
 }
