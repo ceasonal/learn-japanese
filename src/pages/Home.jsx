@@ -32,7 +32,7 @@ const LandingPage = () => {
                 Hiragana is the most basic Japanese script, used for native Japanese words and grammatical elements.
               </Typography>
               <Button variant="outlined" color="primary" fullWidth href="#/hiragana">
-                Learn More
+                Learn
               </Button>
             </Paper>
           </Grid>
@@ -48,7 +48,7 @@ const LandingPage = () => {
                 Katakana is used primarily for foreign words, names, technical terms, and onomatopoeia.
               </Typography>
               <Button variant="outlined" color="primary" fullWidth src="#/katakana">
-                Learn More
+                Learn 
               </Button>
             </Paper>
           </Grid>
@@ -64,7 +64,7 @@ const LandingPage = () => {
                 Kanji are logographic characters borrowed from Chinese. They represent concepts and words.
               </Typography>
               <Button variant="outlined" color="primary" fullWidth href="#/kanji">
-                Learn More
+                Learn 
               </Button>
             </Paper>
           </Grid>
