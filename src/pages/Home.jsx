@@ -14,7 +14,7 @@ const LandingPage = () => {
               <Typography variant="h4" fontWeight={600} marginBottom={2}>
             Learn Japanese Characters
           </Typography>
-          <Typography variant="h6" color="textSecondary" fontWeight={600} marginBottom={4}>
+          <Typography variant="h6" color="textSecondary" fontWeight={500} marginBottom={4}>
             Explore Hiragana, Katakana, Kanji, and Kana. Understand, learn, and practice these essential writing systems.
           </Typography>
         </Box>
@@ -91,7 +91,7 @@ const LandingPage = () => {
             Features Available:
           </Typography>
           <Typography variant="body1" color="textSecondary">
-            - Learn SHiragana, Katakana, and Kanji
+            - Learn Hiragana, Katakana, and Kanji
             <br />
             - More features coming soon!
           </Typography>
