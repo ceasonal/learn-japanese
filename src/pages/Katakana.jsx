@@ -48,7 +48,7 @@ const KatakanaLearning = () => {
 
               {/* Display the first 5 characters */}
               <Grid2 container spacing={1} justifyContent="center">
-                {KatakanaData[vowel].slice(0, 5).map((characterData, idx) => (
+                {KatakanaData[vowel].map((characterData, idx) => (
                   <Grid2 item key={idx}>
                     <Box
                       display="flex"
