@@ -74,10 +74,10 @@ const LandingPage = () => {
             <Paper sx={{ padding: 3, textAlign: 'center', backgroundColor: 'rgb(0,0,0,0)', boxShadow: '0 5px 5px rgba(0, 0, 0)' }}>
               <img src={kanaImage} alt="Kana" style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
               <Typography variant="h5" gutterBottom sx={{ marginTop: 2 }}>
-                Kana Conversion
+                Kanji to Kana 
               </Typography>
               <Typography variant="body1" color="textSecondary">
-                Learn how to convert between Kana and Romanized Japanese characters easily.
+                Try Convert Kanji characters into their corresponding Kana ( Hiragana or Katakana) easily.
               </Typography>
               <Button variant="contained" color="inherit" fullWidth sx={{ marginTop: 2 }} >
                 Try Conversion

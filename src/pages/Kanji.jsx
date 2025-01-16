@@ -10,7 +10,7 @@ const KanjiLearn = () => {
   const fetchKanjiData = (grade) => {
     setLoading(true);
     japanese_easy.lookupKanjiList(grade).then((data) => {
-      // console.log(`Result from lookupKanjiList for ${grade}:`, data);
+      console.log(`Result from lookupKanjiList for ${grade}:`, data);
       setKanjiData(data); 
       setLoading(false); 
     }).catch((error) => {
@@ -26,7 +26,7 @@ const KanjiLearn = () => {
   return (
     <>
        <Typography variant="h4" align="center" fontWeight={700} marginBottom={5}>
-        Kanji Chart Grade -{selectedGrade.split('-')[1]}
+        Kanji Chart {selectedGrade.charAt(0).toUpperCase() + selectedGrade.slice(1).toLowerCase()}
       </Typography>
 
       <FormControl fullWidth style={{ marginBottom: '20px' }}>
@@ -41,6 +41,14 @@ const KanjiLearn = () => {
           <MenuItem value="grade-3">Grade 3</MenuItem>
           <MenuItem value="grade-4">Grade 4</MenuItem>
           <MenuItem value="grade-5">Grade 5</MenuItem>
+          <MenuItem value="grade-6">Grade 6</MenuItem>
+          <MenuItem value="grade-8">Grade 8</MenuItem>
+          <MenuItem value="joyo">Joyo</MenuItem>
+          <MenuItem value="jinmeiyo">Jinmeiyo</MenuItem>
+          <MenuItem value="heisig">Heisig</MenuItem>
+          <MenuItem value="kyouiku">Kyouiku</MenuItem>
+          <MenuItem value="all">All</MenuItem>
+          
         </Select>
       </FormControl>
 
@@ -64,7 +72,7 @@ const KanjiLearn = () => {
                 borderRadius="8px"
                 bgcolor="#f5f5f5"
                 boxShadow="0 2px 5px rgba(0, 0, 0, 0.1)"
-                style={{ fontSize: '24px', fontWeight: 'bold' }}
+                style={{ fontSize: '24px', fontWeight: 600 }}
               >
                 {kanjiItem}
               </Box>

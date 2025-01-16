@@ -12,8 +12,8 @@ import Button from '@mui/material/Button';
 import Logo from '../images/logo.png';
 import { Link } from 'react-router-dom'; 
 
-const pages = ['Search', 'Convert'];
-const Characters = ['Hiragana', 'Katakana', 'Kanji', 'Kana'];
+const pages = ['Convert'];
+const Characters = ['Hiragana', 'Katakana', 'Kanji'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
