@@ -88,12 +88,10 @@ const LandingPage = () => {
         </Grid>
 
         <Box sx={{ textAlign: 'center', marginTop: 6 }}>
-          <Typography variant="h6" gutterBottom>
-            Made By
-          </Typography>
           <Typography variant="body1" gutterBottom>
-          <Link href='https://github.com/ceasonal/' sx={{ textDecoration: 'underline', color: 'inherit' }}>ceasonal</Link> & &nbsp;
-          <Link href='https://github.com/crizmo/' sx={{ textDecoration: 'underline', color: 'inherit' }}>crizmo</Link>
+            Made by &nbsp;
+          <Link href='https://github.com/ceasonal/' sx={{ textDecoration: 'underline', color: 'inherit' }}>ceasonal 🦥</Link> & &nbsp;
+          <Link href='https://github.com/crizmo/' sx={{ textDecoration: 'underline', color: 'inherit' }}>crizmo 🐱</Link>
           </Typography>
         </Box>
       </Container>
