@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as japanese_easy from 'japanese-easy';
 
 const Convert = () => {
-  const [kanjiInput, setKanjiInput] = useState('日'); // Default Kanji is "日"
+  const [kanjiInput, setKanjiInput] = useState('日'); 
   const [kanaOutput, setKanaOutput] = useState('');
   const [error, setError] = useState('');
 
@@ -24,21 +24,19 @@ const Convert = () => {
     }
   };
 
-  // Use useEffect to convert as the user types
   useEffect(() => {
     if (kanjiInput && !error) {
-      // Trigger Kanji to Kana conversion only if there's valid input
       japanese_easy.convertKanjiToKana(kanjiInput).then(data => {
         console.log("Result from convertKanjiToKana:", data);
-        setKanaOutput(data); // Set the output result
+        setKanaOutput(data); 
       }).catch(error => {
         console.error("Error converting Kanji to Kana:", error);
         setKanaOutput('Error in conversion.');
       });
     } else {
-      setKanaOutput(''); // Reset output if input is cleared or invalid
+      setKanaOutput(''); 
     }
-  }, [kanjiInput, error]); // This will run every time the kanjiInput or error changes
+  }, [kanjiInput, error]); 
 
   return (
     <div style={{
@@ -68,7 +66,6 @@ const Convert = () => {
         }}
       />
 
-      {/* Display Kana Output in a Card-like Box */}
       {kanaOutput && (
         <div style={{
           padding: '20px',
@@ -87,7 +84,7 @@ const Convert = () => {
         </div>
       )}
 
-      {/* Display Error Message in a Card-like Box */}
+      {/* Display Error Message */}
       {error && (
         <div style={{
           padding: '20px',
