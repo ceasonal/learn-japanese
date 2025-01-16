@@ -47,7 +47,7 @@ const LandingPage = () => {
               <Typography variant="body1" color="textSecondary">
                 Katakana is used primarily for foreign words, names, technical terms, and onomatopoeia.
               </Typography>
-              <Button variant="contained" color="inherit"  fullWidth src="#/katakana" sx={{ marginTop: 2 }} >
+              <Button variant="contained" color="inherit" fullWidth href="#/katakana" sx={{ marginTop: 2 }}>
                 Learn 
               </Button>
             </Paper>
@@ -79,7 +79,7 @@ const LandingPage = () => {
               <Typography variant="body1" color="textSecondary">
                 Try Convert Kanji characters into their corresponding Kana ( Hiragana or Katakana) easily.
               </Typography>
-              <Button variant="contained" color="inherit" fullWidth sx={{ marginTop: 2 }} >
+              <Button variant="contained" color="inherit" fullWidth sx={{ marginTop: 2 }} href="#/convert">
                 Try Conversion
               </Button>
             </Paper>

@@ -86,7 +86,7 @@ const HiraganaLearning = () => {
                         {characterData.character}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" fontWeight={'bold'}>
-                        Ipa: {characterData.ipa}
+                        Romaji: {characterData.romaji}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" fontWeight={'bold'}>
                         Strokes: {characterData.stroke_count}
