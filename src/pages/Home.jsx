@@ -1,9 +1,10 @@
 import React from 'react';
-import { Box, Container, Grid, Typography, Button, Paper } from '@mui/material';
 import hiraganaImage from '../assets/images/hiragana.jpg'; 
 import katakanaImage from '../assets/images/katakana.jpg'; 
 import kanjiImage from '../assets/images/kanji.jpg'; 
 import kanaImage from '../assets/images/kana.jpg'; 
+import { Box, Container, Grid, Typography, Button, Paper, Link } from '@mui/material';
+// import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -87,13 +88,12 @@ const LandingPage = () => {
         </Grid>
 
         <Box sx={{ textAlign: 'center', marginTop: 6 }}>
-          <Typography variant="h5" gutterBottom>
-            Features Available:
+          <Typography variant="h6" gutterBottom>
+            Made By
           </Typography>
-          <Typography variant="body1" color="textSecondary">
-            - Learn Hiragana, Katakana, and Kanji
-            <br />
-            - More features coming soon!
+          <Typography variant="body1" gutterBottom>
+          <Link href='https://github.com/ceasonal/' sx={{ textDecoration: 'underline', color: 'inherit' }}>ceasonal</Link> & &nbsp;
+          <Link href='https://github.com/crizmo/' sx={{ textDecoration: 'underline', color: 'inherit' }}>crizmo</Link>
           </Typography>
         </Box>
       </Container>
