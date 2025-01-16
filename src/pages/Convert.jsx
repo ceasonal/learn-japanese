@@ -27,7 +27,7 @@ const Convert = () => {
   useEffect(() => {
     if (kanjiInput && !error) {
       japanese_easy.convertKanjiToKana(kanjiInput).then(data => {
-        console.log("Result from convertKanjiToKana:", data);
+        // console.log("Result from convertKanjiToKana:", data);
         setKanaOutput(data); 
       }).catch(error => {
         console.error("Error converting Kanji to Kana:", error);

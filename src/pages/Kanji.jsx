@@ -10,7 +10,7 @@ const KanjiLearn = () => {
   const fetchKanjiData = (grade) => {
     setLoading(true);
     japanese_easy.lookupKanjiList(grade).then((data) => {
-      console.log(`Result from lookupKanjiList for ${grade}:`, data);
+      // console.log(`Result from lookupKanjiList for ${grade}:`, data);
       setKanjiData(data); 
       setLoading(false); 
     }).catch((error) => {

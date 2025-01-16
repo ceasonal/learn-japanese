@@ -9,7 +9,7 @@ const HiraganaLearning = () => {
   useEffect(() => {
     // Fetch the Hiragana chart data
     japanese_easy.getHiraganaChart().then(data => {
-      console.log("Result from getHiraganaChart:", data);
+      // console.log("Result from getHiraganaChart:", data);
       setHiraganaData(data); 
       setLoading(false); 
     }).catch(error => {

@@ -9,7 +9,7 @@ const KatakanaLearning = () => {
   useEffect(() => {
     // Fetch the Katakana chart data
     japanese_easy.getKatakanaChart().then(data => {
-      console.log("Result from getKatakanaChart:", data);
+      // console.log("Result from getKatakanaChart:", data);
       setKatakanaData(data); 
       setLoading(false); 
     }).catch(error => {
